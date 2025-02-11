@@ -1,0 +1,131 @@
+/* Starting Of Varaibles */
+
+:root {
+  --main-color: #F4992A;
+  --text-color: #292929;
+}
+
+/* Ending Of Varaibles */
+
+/* Starting Of Global Rules */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", serif;
+  max-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* Ending Of Global Rules */
+
+/* Starting Of Personal FrameWork */
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.resp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+/* Ending Of Personal FrameWork */
+
+header {
+  min-height: 100px;
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  padding-block: 50px 100px;
+}
+
+section {
+  padding-block: 25px;
+  padding-inline: 20px;
+  transform: translateY(-75px);
+  -webkit-transform: translateY(-75px);
+  -moz-transform: translateY(-75px);
+  -ms-transform: translateY(-75px);
+  -o-transform: translateY(-75px);
+  color: var(--text-color);
+}
+
+section .box {
+  background-color: #EDEDED;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0px 10px rgb(0, 0, 0, 20%), 0 4px 10px rgb(0, 0, 0, 20%);
+}
+
+section .box h2 {
+  background-color: var(--main-color);
+  padding-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+section .box .image {}
+
+section .box h3 {
+  width: fit-content;
+  background-color: var(--main-color);
+  padding: 15px;
+  padding-inline-start: 30px;
+  margin-block: 20px;
+  font-size: 20px;
+}
+
+section .box ul {
+  padding: 0 20px 20px;
+}
+
+section .box ul li {
+  font-size: 18px;
+}
+
+section .box ul li>i {
+  margin-inline-end: 10px;
+  font-size: 14px;
+}
