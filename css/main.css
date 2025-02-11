@@ -124,7 +124,7 @@ section .box h2 {
 }
 
 section .box img {
-  width: 100%;
+  width: 350px;
   height: 250px;
 }
 
@@ -247,6 +247,12 @@ footer .follow>a>i {
 footer .follow>a>i:nth-child(1) {
   animation: backwardandforward 1.5s linear infinite;
   -webkit-animation: backwardandforward 1.5s linear infinite;
+}
+
+@media (max-width: 419px) {
+  footer .follow>a>i:nth-child(2) {
+    display: none;
+  }
 }
 
 footer .content .social {
